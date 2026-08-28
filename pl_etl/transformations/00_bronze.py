@@ -6,6 +6,7 @@ def itens_prova():
         spark.read.format("csv")
         .option("header", "true")
         .option("sep", ";")
+        .option("encoding", "iso-8859-1") 
         .load("dbfs:/Volumes/databricks-repo/enem/enem2025/DADOS/ITENS_PROVA_2025.csv")
     )
 
@@ -15,5 +16,6 @@ def participantes():
         spark.read.format("csv")
         .option("header", "true")
         .option("sep", ";")
+        .option("encoding", "iso-8859-1")
         .load("dbfs:/Volumes/databricks-repo/enem/enem2025/DADOS/PARTICIPANTES_2025.csv")
     )
