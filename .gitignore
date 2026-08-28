@@ -216,3 +216,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Data files:
+*.csv
+*.pdf
+*.docx
+*.sas
+*.ods
+*.xlsx
+*.sps
+*.sas
+*.R
