@@ -14,7 +14,7 @@ def tb_itens_prova():
         .option("header", "true")
         .option("sep", ";")
         .option("encoding", "iso-8859-1") 
-        .load(data_base_path + "/ITENS_PROVA_2025.csv")
+        .load(data_base_path + "/ITENS_PROVA_2024.csv")
     )
 
 @dp.table(name="participantes")
@@ -24,7 +24,7 @@ def tb_participantes():
         .option("header", "true")
         .option("sep", ";")
         .option("encoding", "iso-8859-1")
-        .load(data_base_path + "/PARTICIPANTES_2025.csv")
+        .load(data_base_path + "/PARTICIPANTES_2024.csv")
     )
 
 @dp.table(name="resultados")
