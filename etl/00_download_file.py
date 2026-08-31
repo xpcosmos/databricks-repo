@@ -4,7 +4,7 @@ import requests
 import os
 
 # # Set the URL and the target directory
-# URL = 'https://download.inep.gov.br/microdados/microdados_enem_2024.zip'
+URL = 'https://download.inep.gov.br/microdados/microdados_enem_2024.zip'
 
 EXTRACT_TO_DIR = (
     "/Workspace/Users/"
@@ -12,13 +12,13 @@ EXTRACT_TO_DIR = (
     "databricks-repo/etl/tmp"
 )
 
-# # Download the file
-# response = requests.get(URL, verify=False, stream=True)
+# Download the file
+response = requests.get(URL, verify=False, stream=True)
 
-# with open("./microdados_enem_2024", "wb") as f:
-#     for chunk in response.iter_content(chunk_size=1024 * 1024):
-#         if chunk:
-#             f.write(chunk)
+with open("./microdados_enem_2024", "wb") as f:
+    for chunk in response.iter_content(chunk_size=1024 * 1024):
+        if chunk:
+            f.write(chunk)
 
 
 print(os.getcwd())
