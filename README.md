@@ -601,15 +601,6 @@ databricks-repo/
 │   └── 03_gold.py                     # Gold layer notebook
 └── .git/                              # Git repository
 ```
-
----
-
-## Contributors
-
-**Owner:** mikeias.oliveira@al.infnet.edu.br
-
----
-
 ## License
 
 See `LICENSE` file for details.
